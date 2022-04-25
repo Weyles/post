@@ -1,0 +1,1 @@
+export const SWAPI_COMMENTS = "https://jsonplaceholder.typicode.com/comments?_limit=10";

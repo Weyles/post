@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CommentsContainer from "./components/comments/CommentsContainer";
+import LikesContainer from "./components/likes/LikesContainer";
+import TitleContainer from "./components/title/TitleContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <img alt="kekw" src="https://cdn.mos.cms.futurecdn.net/CAZ6JXi6huSuN4QGE627NR.jpg"/>
+        <TitleContainer />
+        <LikesContainer />
+      </div>
+      <CommentsContainer />
     </div>
   );
 }
