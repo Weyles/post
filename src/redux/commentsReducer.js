@@ -41,7 +41,6 @@ const commentsReducer = (state = initialState, action) => {
                 ...state,
                 comments: [...state.comments, ...action.api],
             }
-            debugger;
         }
         case DELETE_COMMENT: {
             const newComments = [...state.comments];
@@ -60,7 +59,7 @@ const commentsReducer = (state = initialState, action) => {
     }
 }
 
-export const addCommentsAC = (text, id) => ({type: COMMENT_CREATE, data: {text, id}});
+export const addCommentsAC = (name, body, id) => ({type: COMMENT_CREATE, data: {name, body, id}});
 export const inputCommentAC = (text) => ({type: INPUT_COMMENT, value: text});
 export const deleteCommentAC = (id) => ({type: DELETE_COMMENT, id: id});
 export const loadCommentsAC = (api) => ({type: COMMENTS_LOAD, api: api,});

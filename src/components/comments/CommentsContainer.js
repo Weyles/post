@@ -11,8 +11,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return{
-        addComment: (text, id) => {
-            dispatch(addCommentsAC(text, id))
+        addComment: (name, body, id) => {
+            dispatch(addCommentsAC(name, body, id))
         },
         handleInput: (text) => {
             dispatch(inputCommentAC(text))

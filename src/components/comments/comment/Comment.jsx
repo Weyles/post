@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from "./../Comments.module.css"
 export default function Comment(props) {
   const deleteComment = (e) => {
     e.preventDefault();
@@ -7,14 +7,16 @@ export default function Comment(props) {
   }
  
   return (
-    <form onSubmit={deleteComment}>
+    <form className={styles.form} onSubmit={deleteComment}>
+        <input className={styles.delete} type="submit" value="&times;" />
         <div>
-          {props.name}
+          <div>
+            {props.name}
+          </div>
+          <div>
+            {props.body}
+          </div>
         </div>
-        <div>
-          {props.body}
-        </div>
-        <input type="submit" value="&times;" />
     </form>
   )
 }
