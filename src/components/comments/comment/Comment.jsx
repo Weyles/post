@@ -10,7 +10,7 @@ export default function Comment(props) {
     <form className={styles.form} onSubmit={deleteComment}>
         <input className={styles.delete} type="submit" value="&times;" />
         <div>
-          <div>
+          <div className={styles.name}>
             {props.name}
           </div>
           <div>

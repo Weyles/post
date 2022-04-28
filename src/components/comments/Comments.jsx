@@ -27,7 +27,7 @@ export default function Comments(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
         const id = uniqid();
-        props.addComment("Daniel-Lyamin", props.value, id);
+        props.addComment("Daniel Lyamin", props.value, id);
     }
 
   return (
